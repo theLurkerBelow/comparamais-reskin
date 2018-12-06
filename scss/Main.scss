@@ -22,6 +22,7 @@ html {
     .column {
         flex-basis: 100%;
     }
+
     .column {
         flex: 1;
     }
@@ -133,8 +134,8 @@ html {
         display: flex;
         flex-direction: column;
     }
-   
-   
+
+
     .simulator-card-title {
         font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
         font-style: normal;
@@ -228,21 +229,37 @@ html {
 
     }
 
-    .first-partners-spotlight,
-    .second-partners-spotlight,
-    .third-partners-spotlight {
+
+    .partners-row {
         display: flex;
-        flex-direction: row;
+        flex-flow: wrap;
         justify-content: space-between;
-        margin-left: 50px;
-        margin-right: 50px;
+        width: 300px;
+        height: 533px;
+        margin-top: 38px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .partner-spotlight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 20px;
     }
 
-    .first-partners-spotlight {
-        margin-top: 40px !important;
-
+    .partner-spotlight {
+        width: 92px;
+        height: 92px;
+        background: #FFFFFF;
+        box-shadow: 2px 0px 11px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
     }
+
+.resize-mobile-title{
+    width: 300px;
+}
+
 
     .promo-cartao-credito {
         margin-top: 0px;
@@ -250,6 +267,7 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 300px;
 
     }
 
@@ -258,7 +276,7 @@ html {
         width: 300px;
         position: absolute;
         margin-top: -120px;
-        margin-left: 10px;
+
         text-align: center;
 
     }
@@ -276,7 +294,7 @@ html {
         flex-flow: wrap;
         margin-top: 22px;
     }
-    
+
     #learnMoreCreditCard,
     h4 {
         font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -284,9 +302,9 @@ html {
         font-size: 1.5rem;
         margin-left: 80px;
         width: 371px;
-    
+
         position: absolute;
-    
+
     }
 
 
@@ -305,8 +323,8 @@ html {
         padding-left: 28px;
         padding-bottom: 10px;
     }
-    
-    
+
+
     .slide {
         clear: both;
         width: 14%;
@@ -322,480 +340,513 @@ html {
         position: absolute;
         z-index: 20;
     }
-    
+
     .slide li {
         padding: 10px;
-    
+
         list-style: none;
-    
+
     }
-    
-    
+
+
     #touch {
         position: absolute;
         opacity: 0;
         height: 0px;
     }
-    
+
     #touch:checked+.slide {
         height: 300px;
     }
-    
+
     .dropdown {
         width: 264px;
         padding: 6px;
         height: 48px;
         font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    
+
     }
-    
+
+    .dropdown {
+        margin-top: 40px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+
+    }
+
     .dropdown li a {
         text-decoration: none;
         color: #2d2f31;
     }
 
-.illustration-aligned-right img{
-    position: absolute;
-margin-top: -130px;
-width: 90%;
-}
-.horizontalDottedLine {
-    margin-top: 312px;
-    border-bottom: 3px dashed #d2d2d2;
-    width: 100%;
-    height: 2px;
-    z-index: 1;
-}
+    .illustration-aligned-right img {
+        position: absolute;
+        margin-top: -130px;
+        width: 90%;
+    }
 
-
-
+    .creditozito {
+        display: flex;
+        justify-content: center;
+        margin-top: 110px;
+    }
 
+    .horizontalDottedLine {
+        margin-top: 312px;
+        border-bottom: 3px dashed #d2d2d2;
+        width: 100%;
+        height: 2px;
+        z-index: 1;
+    }
 
-.btn {
-    width: 221px;
-    height: 44px;
 
-    margin-left: 277px;
-    margin-top: -63px;
-    border-radius: 0.313em;
-
-}
-
-.btn {
-    font-size: 1em;
-    font-variant: small-caps;
-    cursor: pointer;
-    display: block;
-    padding-top: 10px;
-    padding-left: 60px;
-
-
-}
-
-.btn-comparar-cartoes {
 
-    background-color: #F37222;
-    width: 221px;
-    height: 44px;
-    margin-top: 30px;
-    margin-left: 80px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-}
 
-.btn-comparar-cartoes a:hover {
-    color: #4C4D5C;
-}
 
-.btn-comparar-cartoes,
-{
-    color: #FFFFFF;
-}
+    .btn {
+        width: 221px;
+        height: 44px;
 
+        margin-left: 0px;
+        margin-top: -63px;
+        border-radius: 0.313em;
 
-.group-dropdown-button {
-    margin-top: 32px;
-    position: absolute;
-background-color: pink;
-height: 126px;
-width: 265px;
-margin-left: 46px;
-}
+    }
 
-#learnMoreCreditCard {
-    display: flex;
-    flex-flow: wrap;
-    margin-top: 22px;
-}
+    .btn {
+        font-size: 1em;
+        font-variant: small-caps;
+        cursor: pointer;
+        display: block;
+        padding-top: 10px;
+        padding-left: 60px;
 
-#learnMoreCreditCard,
-h4 {
-    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #21405f;
-    font-size: 1.5rem;
-    margin-left: 80px;
-    width: 371px;
 
-    position: absolute;
+    }
 
-}
 
-.icon-svg-credit {
 
-    margin-left: -80px;
-}
 
-#learnMoreCreditCard a {
-    color: #F37222;
-    margin-top: 113px;
-    position: absolute;
-    margin-left: 78px;
-}
 
-#learnMorePersonalLoan {
-    display: flex;
-    flex-flow: wrap;
-    margin-top: 300px;
 
 
-}
 
-.icon-svg-loan {
+    .btn-comparar-cartoes {
+        margin-top: 308px !important;
+        background-color: #F37222;
+        width: 221px;
+        height: 44px;
+        z-index: 2;
+        margin-top: 98px;
+        margin-left: 0px !important;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        position: absolute;
+    }
 
-    margin-top: 15px;
-    margin-left: 18px;
-}
+    .btn-comparar-cartoes a:hover {
+        color: #4C4D5C;
+    }
 
+    .btn-comparar-cartoes,
+        {
+        color: #FFFFFF;
+    }
 
-#learnMorePersonalLoan .btn-comparar-credito {
-    color: #FFFFFF;
-    background-color: #F37222;
-    width: 221px;
-    height: 44px;
-    margin-top: 24px;
-    margin-left: 20px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .mobile-positioned {
+        position: absolute;
+        margin-top: 298px;
+        width: 300px;
 
-#learnMorePersonalLoan .btn-comparar-credito a {
-    color: #FFFFFF;
-    background-color: #F37222;
+    }
 
-    height: 44px;
 
-    border-radius: 5px;
-    line-height: 3.4;
+    .vacation {
+        margin-top: 200px;
+    }
 
+    .group-dropdown-button {
 
+        position: absolute;
+        margin-top: 202px !important;
+        z-index: 1;
+        height: 126px;
+        width: 265px;
 
-}
+    }
 
-#learnMorePersonalLoan a:hover {
-    color: #4C4D5C;
-}
+    #learnMoreCreditCard {
+        display: flex;
+        flex-flow: wrap;
+        margin-top: 22px;
+    }
 
+    #learnMoreCreditCard,
+    h4 {
+        font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #21405f;
+        font-size: 1.5rem;
+        margin-left: 80px;
+        width: 371px;
 
+        position: absolute;
 
-#learnMorePersonalLoan h4 {
-    margin-top: -128px;
-    margin-left: 180px;
-    width: 432px;
-    position: absolute;
-}
+    }
 
-#learnMorePersonalLoan h2 {
-    margin-top: 160px;
-    margin-left: 20px;
-}
+    .icon-svg-credit {
 
-#learnMorePersonalLoan .orange {
-    color: #F37222;
-    position: absolute;
-    margin-top: 120px;
-    margin-left: 14px;
-}
+        margin-left: -80px;
+    }
 
+    #learnMoreCreditCard a {
+        color: #F37222;
+        margin-top: 113px;
+        position: absolute;
+        margin-left: 78px;
+    }
 
-.broadband-section {
-    margin-top: 255px;
-}
+    #learnMorePersonalLoan {
+        display: flex;
+        flex-flow: wrap;
+        margin-top: 300px;
 
 
-#learnMoreBroadband {
-    display: flex;
-    flex-flow: wrap;
-}
+    }
 
-#learnMoreBroadband h2 {
-    margin-top: 160px;
+    .icon-svg-loan {
 
-}
+        margin-top: 15px;
+        margin-left: 18px;
+    }
 
-#learnMoreBroadband a {
-    color: #FFFFFF;
-    margin-top: 0px;
-    position: absolute;
-    margin-left: 0px;
-    margin-bottom: 0px;
 
-}
+    #learnMorePersonalLoan .btn-comparar-credito {
+        color: #FFFFFF;
+        background-color: #F37222;
+        width: 221px;
+        height: 44px;
+        margin-top: 24px;
+        margin-left: 20px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-#learnMoreBroadband .btn-comparar-banda-larga {
-    color: #FFFFFF;
-    background-color: #F37222;
-    width: 221px;
-    height: 44px;
-    margin-top: 24px;
+    #learnMorePersonalLoan .btn-comparar-credito a {
+        color: #FFFFFF;
+        background-color: #F37222;
 
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        height: 44px;
 
-.icon-svg-broadband {
+        border-radius: 5px;
+        line-height: 3.4;
 
-    margin-top: 30px;
 
-}
 
-#learnMoreBroadband h4 {
+    }
 
-    width: 405px;
+    #learnMorePersonalLoan a:hover {
+        color: #4C4D5C;
+    }
 
-    margin-top: 395px;
-    margin-left: 168px;
 
 
-}
+    #learnMorePersonalLoan h4 {
+        margin-top: -128px;
+        margin-left: 180px;
+        width: 432px;
+        position: absolute;
+    }
 
-#learnMoreBroadband .column {
-    display: flex;
-    flex-flow: wrap;
-}
+    #learnMorePersonalLoan h2 {
+        margin-top: 160px;
+        margin-left: 20px;
+    }
 
-#learnMoreBroadband a:hover {
-    color: #4C4D5C;
-}
+    #learnMorePersonalLoan .orange {
+        color: #F37222;
+        position: absolute;
+        margin-top: 120px;
+        margin-left: 14px;
+    }
 
-#learnMoreBroadband .orange {
-    color: #F37222;
-    margin-top: 480px;
-    margin-left: 168px;
-}
 
-#learnMoreEnergy {
-    display: flex;
-    flex-flow: wrap;
+    .broadband-section {
+        margin-top: 255px;
+    }
 
-}
 
-#learnMoreEnergy h2 {
-    margin-left: 20px;
-    width: 594px;
-}
+    #learnMoreBroadband {
+        display: flex;
+        flex-flow: wrap;
+    }
 
-#learnMoreEnergy h4 {
-    width: 464px;
-    margin-left: 178px;
-    margin-top: 52px;
-}
+    #learnMoreBroadband h2 {
+        margin-top: 160px;
 
-#learnMoreEnergy .horizontalDottedLine {
-    margin-top: 32px;
-}
+    }
 
-.energy-section {
-    margin-top: 197px;
-}
+    #learnMoreBroadband a {
+        color: #FFFFFF;
+        margin-top: 0px;
+        position: absolute;
+        margin-left: 0px;
+        margin-bottom: 0px;
 
-#learnMoreEnergy .btn-comparar-energia {
-    color: #FFFFFF;
-    background-color: #F37222;
-    width: 221px;
-    height: 44px;
-    margin-top: 24px;
-    margin-left: 23px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    }
 
-.icon-svg-energia {
+    #learnMoreBroadband .btn-comparar-banda-larga {
+        color: #FFFFFF;
+        background-color: #F37222;
+        width: 221px;
+        height: 44px;
+        margin-top: 24px;
 
-    margin-top: 30px;
-    position: absolute;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-}
+    .icon-svg-broadband {
 
-#learnMoreEnergy a:hover {
-    color: #4C4D5C;
-}
-
-#learnMoreEnergy .orange {
-    color: #F37222;
-
-    position: absolute;
-    margin-top: 128px;
-    margin-left: 175px;
-}
-
-#newsletter-signup {
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-}
-
-#newsletter-signup h2 {
-    text-align: center;
-}
-
-#newsletter-signup h4 {
-    position: inherit;
-    margin-left: 15px;
-}
-
-#newsletter-signup .leading-line-partners {
-    width: 100%;
-}
-
-#newsletter-signup {
-    margin-top: 280px;
-    background-color: #F5F4F3;
-    height: 372px;
-}
-
-#newsletter-signup .row {
-    justify-content: center;
-    padding-left: 0px;
-}
-
-.basic-input {
-    background: #FFFFFF;
-    width: 450px;
-    height: 44px;
-    border-radius: 3px;
-}
-
-#newsletter-signup .btn-subscrever {
-    color: #FFFFFF;
-    background-color: #F37222;
-    width: 221px;
-    height: 44px;
-    margin-left: 15px;
-
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#mainfooter {
-    height: 547px;
-    background-color: #4C4D5C;
-    display: flex;
-    flex-direction: column;
-
-}
-
-#mainfooter li {
-    list-style: none;
-
-}
-
-.footerbrand {
-    width: 225px;
-    height: 49px;
-    margin-top: 74px;
-    margin-left: 140px;
-    position: absolute;
-}
-
-.footer-link-one {
-    margin-top: 168px;
-    margin-left: 434px;
-}
-
-.footer-link-two {
-    margin-left: 720px;
-    width: 280px;
-    margin-top: -175px;
-}
-
-.footer-links-title {
-    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    text-transform: capitalize;
-    font-weight: bold;
-    color: #F37222;
-    font-size: 1.3rem;
-    margin-bottom: 0px;
-    margin-left: 44px;
-}
-
-.flag-pt {
-    height: 23px;
-    margin-left: 140px;
-    margin-top: 110px;
-}
-
-.nota-rodape {
-    margin-left: 200px;
-    margin-top: -23px;
-    color: #FFFFFF;
-    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: .9rem;
-    text-transform: capitalize;
-}
-
-hr.style1 {
-    border-top: 1px solid #FFFFFF;
-    width: 1594px;
-    margin-top: -4px;
-    margin-left: 139px;
-}
-
-.followus {
-    display: flex;
-    margin-left: 138px;
-
-}
-
-.siga-nos {
-    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: .9rem;
-    color: #FFFFFF;
-}
-
-.social-media-links {
-    display: flex;
-    justify-content: space-between;
-    width: 120px;
-    margin-left: 20px;
-}
-
-#footerMenuLinks ul {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    margin-left: 1050px;
-}
-
-.secondaryfooter {
-    background-color: #5F6071;
-    height: 90px;
-    justify-content: center;
-    align-content: center;
-    color: #FFFFFF;
-    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: .8rem;
-}
+        margin-top: 30px;
+
+    }
+
+    #learnMoreBroadband h4 {
+
+        width: 405px;
+
+        margin-top: 395px;
+        margin-left: 168px;
+
+
+    }
+
+    #learnMoreBroadband .column {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    #learnMoreBroadband a:hover {
+        color: #4C4D5C;
+    }
+
+    #learnMoreBroadband .orange {
+        color: #F37222;
+        margin-top: 480px;
+        margin-left: 168px;
+    }
+
+    #learnMoreEnergy {
+        display: flex;
+        flex-flow: wrap;
+
+    }
+
+    #learnMoreEnergy h2 {
+        margin-left: 20px;
+        width: 594px;
+    }
+
+    #learnMoreEnergy h4 {
+        width: 464px;
+        margin-left: 178px;
+        margin-top: 52px;
+    }
+
+    #learnMoreEnergy .horizontalDottedLine {
+        margin-top: 32px;
+    }
+
+    .energy-section {
+        margin-top: 197px;
+    }
+
+    #learnMoreEnergy .btn-comparar-energia {
+        color: #FFFFFF;
+        background-color: #F37222;
+        width: 221px;
+        height: 44px;
+        margin-top: 24px;
+        margin-left: 23px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-svg-energia {
+
+        margin-top: 30px;
+        position: absolute;
+
+    }
+
+    #learnMoreEnergy a:hover {
+        color: #4C4D5C;
+    }
+
+    #learnMoreEnergy .orange {
+        color: #F37222;
+
+        position: absolute;
+        margin-top: 128px;
+        margin-left: 175px;
+    }
+
+    #newsletter-signup {
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+
+    #newsletter-signup h2 {
+        text-align: center;
+    }
+
+    #newsletter-signup h4 {
+        position: inherit;
+        margin-left: 15px;
+    }
+
+    #newsletter-signup .leading-line-partners {
+        width: 100%;
+    }
+
+    #newsletter-signup {
+        margin-top: 280px;
+        background-color: #F5F4F3;
+        height: 372px;
+    }
+
+    #newsletter-signup .row {
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .basic-input {
+        background: #FFFFFF;
+        width: 450px;
+        height: 44px;
+        border-radius: 3px;
+    }
+
+    #newsletter-signup .btn-subscrever {
+        color: #FFFFFF;
+        background-color: #F37222;
+        width: 221px;
+        height: 44px;
+        margin-left: 15px;
+
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mainfooter {
+        height: 486px;
+        background-color: #4C4D5C;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #mainfooter li {
+        list-style: none;
+
+    }
+
+    .footerbrand {
+        width: 225px;
+        height: 49px;
+        margin-top: 74px;
+       
+        position: absolute;
+    }
+
+    .footer-link-one {
+       display: none;
+    }
+
+    .footer-link-two {
+       display: none;
+    }
+
+    .footer-links-title {
+        font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: #F37222;
+        font-size: 1.3rem;
+        margin-bottom: 0px;
+        margin-left: 44px;
+    }
+
+    .flag-pt {
+        height: 23px;
+        
+        margin-top: 110px;
+    }
+
+    .nota-rodape {
+        margin-left: 50px;
+        margin-top: -23px;
+        color: #FFFFFF;
+        font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: .9rem;
+        text-transform: capitalize;
+    }
+
+    hr.style1 {
+        border-top: 1px solid #FFFFFF;
+        width: 100%;
+        margin-top: -4px;
+        // margin-left: 139px;
+    }
+
+    .followus {
+        display: flex;
+       
+
+    }
+
+    .siga-nos {
+        font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: .9rem;
+        color: #FFFFFF;
+    }
+
+    .social-media-links {
+        display: flex;
+        justify-content: space-between;
+        width: 120px;
+        margin-left: 20px;
+    }
+
+    #footerMenuLinks ul {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        
+    }
+
+    .secondaryfooter {
+        background-color: #5F6071;
+        height: 90px;
+        justify-content: center;
+        align-content: center;
+        color: #FFFFFF;
+        font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: .8rem;
+    }
 
 
 
@@ -952,7 +1003,7 @@ hr.style1 {
     .simulator-credito-pessoal,
     .simulator-banda-larga,
     .simulator-energia {
-        
+
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -961,21 +1012,24 @@ hr.style1 {
         -webkit-transition-property: transform;
         transition-property: transform;
         -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
     }
+
     .simulator-cartao-credito:hover,
     .simulator-credito-pessoal:hover,
     .simulator-banda-larga:hover,
-    .simulator-energia:hover, .simulator-cartao-credito:focus,
+    .simulator-energia:hover,
+    .simulator-cartao-credito:focus,
     .simulator-credito-pessoal:focus,
     .simulator-banda-larga:focus,
-    .simulator-energia:focus, .simulator-cartao-credito:active,
+    .simulator-energia:focus,
+    .simulator-cartao-credito:active,
     .simulator-credito-pessoal:active,
     .simulator-banda-larga:active,
     .simulator-energia:active {
-        
+
         -webkit-transform: translateY(-8px);
-transform: translateY(-8px);
+        transform: translateY(-8px);
     }
 
     .simulator-card-title {
@@ -995,6 +1049,33 @@ transform: translateY(-8px);
         height: 146px;
 
     }
+
+
+    .partners-row {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        width: 692px;
+        height: 273px;
+        margin-top: 138px;
+    }
+
+    .partner-spotlight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .partner-spotlight {
+        width: 120px;
+        height: 120px;
+        background: #FFFFFF;
+        box-shadow: 2px 0px 11px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+    }
+
+
+
 
     #NavMenu {
         display: flex;
@@ -1123,17 +1204,7 @@ transform: translateY(-8px);
 
 }
 
-.first-partners-spotlight,
-.second-partners-spotlight,
-.third-partners-spotlight {
-    display: flex;
-    justify-content: center;
 
-}
-
-.first-partners-spotlight {
-    margin-top: 83px;
-}
 
 .promo-cartao-credito {
     margin-top: 150px;
@@ -1243,6 +1314,9 @@ span {
     margin-top: -43px;
     margin-left: 281px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-comparar-cartoes a:hover {
@@ -1532,7 +1606,7 @@ h4 {
 }
 
 #mainfooter {
-    height: 547px;
+    height: 486px;
     background-color: #4C4D5C;
     display: flex;
     flex-direction: column;
@@ -1548,7 +1622,7 @@ h4 {
     width: 225px;
     height: 49px;
     margin-top: 74px;
-    margin-left: 140px;
+ 
     position: absolute;
 }
 
@@ -1560,7 +1634,7 @@ h4 {
 .footer-link-two {
     margin-left: 720px;
     width: 280px;
-    margin-top: -175px;
+    margin-top: -160px;
 }
 
 .footer-links-title {
@@ -1575,12 +1649,12 @@ h4 {
 
 .flag-pt {
     height: 23px;
-    margin-left: 140px;
+   
     margin-top: 110px;
 }
 
 .nota-rodape {
-    margin-left: 200px;
+    margin-left: 50px;
     margin-top: -23px;
     color: #FFFFFF;
     font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -1590,14 +1664,14 @@ h4 {
 
 hr.style1 {
     border-top: 1px solid #FFFFFF;
-    width: 1594px;
+    width: 100%;
     margin-top: -4px;
-    margin-left: 139px;
+    // margin-left: 139px;
 }
 
 .followus {
     display: flex;
-    margin-left: 138px;
+    justify-content: space-between;
 
 }
 
@@ -1611,15 +1685,16 @@ hr.style1 {
     display: flex;
     justify-content: space-between;
     width: 120px;
-    margin-left: 20px;
+    margin-left: -430px;
 }
 
 #footerMenuLinks ul {
     display: flex;
     justify-content: space-between;
     width: 300px;
-    margin-left: 1050px;
+    
 }
+
 
 .secondaryfooter {
     background-color: #5F6071;
