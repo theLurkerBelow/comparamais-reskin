@@ -1,301 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0"
-        name="viewport">
-  <meta content="ie=edge"
-        http-equiv="X-UA-Compatible">
-  <title>Comparamais.com</title>
-  <link href="../_frontEnd/css/normalize.css"
-        rel="stylesheet">
-  <link href="../_frontEnd/scss/Main.scss"
-        rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Comparamais</title>
+  <link href="../_mobileFirst/css/normalize.css" rel="stylesheet">
+  <link href="../_mobileFirst/scss/main.scss" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/png" href="../_mobileFirst/img/favicon.png">
 </head>
+
 <body>
   <div class="accents">
-    <div class="leftAccent"><img alt=""
-         src="../_frontEnd/img/leftAcccentDesktop.svg"></div>
-    <div class="rightAccent"><img alt=""
-         src="../_frontEnd/img/rightAcccentDesktop.svg"></div>
+    <div class="left-accent"><img alt="" src="../img/leftAcccentDesktop.svg"></div>
+    <div class="right-accent"><img alt="" src="../_mobileFirst/img/rightAcccentDesktop.svg"></div>
+    <!-- <div class="left-accent-two"><img alt="" src="../img/leftAcccentDesktop.svg"></div>
+    <div class="right-accent-two"><img alt="" src="../_mobileFirst/img/rightAcccentDesktop.svg"></div> -->
   </div>
-  <div class="accentsone">
-    <div class="leftAccentScrolled"><img alt=""
-         src="../_frontEnd/img/leftAcccentDesktop.svg"></div>
-    <div class="rightAccentScrolled"><img alt=""
-         src="../_frontEnd/img/rightAcccentDesktop.svg"></div>
-  </div>
-  <div class="container">
-    <nav id="NavMenu">
-      <div class="brand">
-        <a href="#"><img alt=""
-             src="../_frontEnd/img/logo.svg"></a>
-      </div>
-      <div class="menu">
-        <ul class="nav-list">
-          <li>
-            <a class="hover-link-1"
-                href="/">inicio</a>
-          </li>
-          <li>
-            <a class="hover-link-2"
-                href="/">cartão de crédito</a>
-          </li>
-          <li>
-            <a class="hover-link-3"
-                href="/">crédito pessoal</a>
-          </li>
-          <li>
-            <a class="hover-link-3"
-                href="/">TV NET VOZ</a>
-          </li>
-          <li>
-            <a class="hover-link-4"
-                href="/">energia</a>
-          </li>
-          <li>
-            <a class="hover-link-5"
-                href="/">blog</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="hero-headline">
-      <h1>Simule, compare & poupe</h1>
-    </div>
-    <section id="simulatorLanding">
-      <div class="simulator-cartao-credito cartaoCredito">
-        <a href="#"><img alt=""
-             class="simulator-card-icon"
-             src="../_frontEnd/img/cartaoCreditoIcon.svg"></a>
-        <p class="simulator-card-title">cartão de crédito</p>
-      </div>
-      <div class="simulator-credito-pessoal creditoPessoal">
-        <a href="#"><img alt=""
-             class="simulator-card-icon"
-             src="../_frontEnd/img/creditoPessoalIcon.svg"></a>
-        <p class="simulator-card-title">crédito pessoal</p>
-      </div>
-      <div class="simulator-banda-larga bandaLarga">
-        <a href="#"><img alt=""
-             class="simulator-card-icon"
-             src="../_frontEnd/img/bandaLargaIcon.svg"></a>
-        <p class="simulator-card-title">TV NET & VOZ</p>
-      </div>
-      <div class="simulator-energia energia">
-        <a href="#"><img alt=""
-             class="simulator-card-icon"
-             src="../_frontEnd/img/energiaIcon.svg"></a>
-        <p class="simulator-card-title">energia</p>
-      </div>
-    </section>
-    <div class="caret-page-indicator"><img alt=""
-         src="../_frontEnd/img/downCaretMain.svg"></div>
-    <div class="trusted-partners container">
-      <h1 class="title-trusted-partners">Ajudamos a encontrar o serviço certo para si</h1>
-      <p class="leading-line-partners">Compare gratuitamente as ofertas dos nossos parceiros de confiança</p>
-    </div>
-    <div class="partners-row container">
-      <div class="partner-spotlight"><img alt=""
-           src="../_frontEnd/img/vodafone.svg"></div>
-      <div class="partner-spotlight"><img alt=""
-           src="../_frontEnd/img/galp.svg"></div>
-      <div class="partner-spotlight"><img alt=""
-           src="../_frontEnd/img/Nos.svg"></div>
-      <div class="partner-spotlight"><img alt=""
-           src="../_frontEnd/img/nowo.svg"></div>
-      <div class="partner-spotlight"><img alt=""
-           src="../_frontEnd/img/cgd.svg"></div>
-      <div class="partner-spotlight"><img alt=""
-           src="../_frontEnd/img/BBVA.svg"></div>
-      <div class="partner-spotlight"><img alt=""
-           src="../_frontEnd/img/montepio.svg"></div>
-      <div class="partner-spotlight"><img alt=""
-           src="../_frontEnd/img/meo.svg"></div>
-      <div class="partner-spotlight"><img alt=""
-           src="../_frontEnd/img/santander.svg"></div>
-      <div class="partner-spotlight"><img alt=""
-           src="../_frontEnd/img/mileniumn.svg"></div>
-    </div><!-- Seleção por ilustração - cartão de crédito -->
-    <section class="promo-cartao-credito container row">
-      <div class="column mobile-positioned">
-        <h2 class="title-trusted-partners">Obtenha o melhor cartão que se adeque ao seu estilo de vida</h2>
-        <div class="group-dropdown-button container">
-          <div class="dropdown">
-            <label for="touch"><span>procuro um cartão com...</span></label> <input id="touch"
-                 type="checkbox">
-            <ul class="slide">
-              <li>
-                <a href="#">Todos os cartões</a>
-              </li>
-              <li>
-                <a href="#">Descontos em compras e refeições</a>
-              </li>
-              <li>
-                <a href="#">Pontos de recompensa</a>
-              </li>
-              <li>
-                <a href="#">Milhas aéreas</a>
-              </li>
-              <li>
-                <a href="#">Benefícios premium e de assinatura</a>
-              </li>
-              <li>
-                <a href="#">Cashback na minha conta</a>
-              </li>
-            </ul>
+  <header>
+    <div class="row">
+      <nav class="column container">
+        <div class="brand">
+          <a href="#"><img alt="" src="../img/logo.svg"></a>
+        </div>
+
+        <input id="menyAvPaa" type="checkbox">
+        <label for="menyAvPaa" id="burger">
+
+          <i class="fas fa-bars"></i>
+
+
+
+        </label>
+
+        <div class="mobile-menu">
+          <div id="brand-mobile">
+            <img src="../_mobileFirst/img/footerbrand.svg" alt="">
           </div>
-        </div>
-        <div class="container btn-comparar-cartoes">
-          <a class="orange"
-               href="#">comparar</a>
-        </div>
-        <div class="horizontalDottedLine separator-credit-mobile"></div>
-        <div id="learnMoreCreditCard container">
-          <img alt=""
-               class="icon-svg-credit"
-               src="../_frontEnd/img/cartaoCreditoIcon.svg">
-          <h4 class="resize-mobile-title">Compare centenas de produtos de forma rápida e fácil</h4><a class="resize-mobile-hook"
-               href="#">saiba como funciona</a>
-        </div>
-      </div>
-      <div class="column illustration-aligned-right creditozito"><img alt=""
-           src="../_frontEnd/img/creditCardIllustration.svg"></div>
-    </section>
-    <section class="seccçãocreditopessoal">
-      <div id="learnMorePersonalLoan">
-        <div class="column illustration-aligned-left vacation"><img alt=""
-             src="../_frontEnd/img/personalLoanIllustration.svg"></div>
-        <div class="column">
-          <h2 class="title-trusted-partners container">Simule as melhores ofertas de crédito pessoal</h2>
-          <div class="btn-comparar-credito">
-            <a href="#">comparar</a>
-          </div>
-          <div class="horizontalDottedLine"></div><img class="icon-svg-loan"
-               src="../_frontEnd/img/creditoPessoalIcon.svg">
-          <h4 class="">Obtenha o seu empréstimo pessoal com as taxas de juro mais baixas</h4><a class="orange"
-               href="#">saiba como funciona</a>
-        </div>
-      </div>
-    </section>
-    <section class="broadband-section">
-      <div id="learnMoreBroadband">
-        <div class="column">
-          <h2 class="title-trusted-partners">Compare pacotes de TV, NET & VOZ dos principais fornecedores</h2>
-          <div class="btn-comparar-banda-larga">
-            <a href="#">comparar</a>
-          </div>
-          <div class="horizontalDottedLine"></div><img alt=""
-               class="icon-svg-broadband"
-               src="../_frontEnd/img/bandaLargaIcon.svg">
-          <h4 class=".resize-mobile-title">O serviço de TV, NET & VOZ mais barato da sua zona</h4><a class="orange"
-               href="#">saiba como funciona</a>
-        </div>
-        <div class="column illustration-aligned-right"><img alt=""
-             src="../_frontEnd/img/broadBandIllustration.svg"></div>
-      </div>
-    </section>
-    <section class="energy-section">
-      <div id="learnMoreEnergy">
-        <div class="column illustration-aligned-left"><img alt=""
-             src="../_frontEnd/img/illustrac%CC%A7aoEnergia.svg"></div>
-        <div class="column">
-          <h2 class="title-trusted-partners">Poupe na sua fatura da eletricidade & gás com o nosso comparador</h2>
-          <div class="btn-comparar-energia">
-            <a class=""
-                 href="#">comparar</a>
-          </div>
-          <div class="horizontalDottedLine"></div><img alt=""
-               class="icon-svg-energia"
-               src="../_frontEnd/img/energiaIcon.svg">
-          <h4>Escolha entre os melhores fornecedores de energia</h4><a class="orange"
-               href="#">saiba como funciona</a>
-        </div>
-      </div>
-    </section>
-  </div>
-  <section id="newsletter-signup">
-    <div class="container">
-      <h2 class="title-trusted-partners">Receba as nossas dicas de poupança & promoções</h2>
-      <h4 class="leading-line-partners">Quer estar atualizado com as últimas novidades e promoções do mundo financeiro? Subscreva a nossa newsletter!</h4>
-      <div class="row">
-        <input class="basic-input"
-             id="name"
-             placeholder="O seu email"
-             type="text">
-        <div class="btn-subscrever">
-          <a class=""
-               href="#">Subscrever</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer id="mainfooter">
-    <div class="container">
-      <div class="footerbrand"><img alt=""
-           src="../_frontEnd/img/footerbrand.svg"></div>
-      <div class="footer-link-one column">
-        <p class="footer-links-title">compare</p>
-        <ul>
-          <li>
-            <a href="#">cartão de crédito</a>
-          </li>
-          <li>
-            <a href="#">crédito pessoal</a>
-          </li>
-          <li>
-            <a href="#">TV, NET & VOZ</a>
-          </li>
-          <li>
-            <a href="#">energia</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-link-two column">
-        <p class="footer-links-title">Legal</p>
-        <ul>
-          <li>
-            <a href="#">termos de serviço</a>
-          </li>
-          <li>
-            <a href="#">política de privacidade</a>
-          </li>
-        </ul>
-      </div>
-      <div class="madeinportugal">
-        <img alt=""
-             class="flag-pt"
-             src="../_frontEnd/img/portugalflag.svg">
-        <p class="nota-rodape">fabricado em portugal</p>
-      </div>
-      <hr class="style1">
-      <div class="followus container">
-        <p class="siga-nos">Siga-nos em</p>
-        <div class="social-media-links"><img alt="facebook"
-             src="../_frontEnd/img/facebook.svg"> <img alt="linkedin"
-             src="../_frontEnd/img/linkedIn.svg"> <img alt="instagram"
-             src="../_frontEnd/img/instagram.svg"></div>
-        <div id="footerMenuLinks container">
-          <ul class="row">
+          <ul>
+
             <li>
-              <a href="#">sobre</a>
+              <a href="#">cartão de crédito</a>
             </li>
             <li>
-              <a href="#">carreiras</a>
+              <a href="#">crédito pessoal</a>
             </li>
             <li>
-              <a href="#">contacto</a>
+              <a href="#">tv, net & voz</a>
+            </li>
+            <li>
+              <a href="#">energia</a>
+            </li>
+            <li>
+              <a href="#">blog</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="nav-list">
+          <ul>
+
+            <li>
+              <a href="#">cartão de crédito</a>
+            </li>
+            <li>
+              <a href="#">crédito pessoal</a>
+            </li>
+            <li>
+              <a href="#">tv, net & voz</a>
+            </li>
+            <li>
+              <a href="#">energia</a>
             </li>
             <li>
               <a href="#">blog</a>
             </li>
           </ul>
         </div>
+      </nav>
+    </div>
+  </header>
+  <div class="hero-title">
+    <h1>simule, compare & poupe</h1>
+  </div>
+  <div id="simulator-frontpage">
+    <div class="cartao-de-credito">
+      <img alt="" src="../img/cartaoCreditoIcon.svg">
+      <p>cartão de crédito</p>
+    </div>
+    <div class="credito-pessoal">
+      <img alt="" src="../img/creditoPessoalIcon.svg">
+      <p>crédito pessoal</p>
+    </div>
+    <div class="tv-net-voz">
+      <img alt="" src="../_mobileFirst/img/bandaLargaIcon.svg">
+      <p>tv, net & voz</p>
+    </div>
+    <div class="energia">
+      <img alt="" src="../_mobileFirst/img/energiaIcon.svg">
+      <p>energia</p>
+    </div>
+  </div>
+  <div class="caret"><img alt="" src="../_mobileFirst/img/downCaretMain.svg"></div>
+  <div class="title-trusted-partners">
+    <h2>Ajudamos a encontrar o serviço certo para si</h2>
+    <p>Compare gratuitamente as ofertas dos nossos parceiros de confiança</p>
+  </div>
+  <div id="partners">
+    <div><img alt="" src="../_mobileFirst/img/BBVA.svg"></div>
+    <div><img alt="" src="../_mobileFirst/img/vodafone.svg"></div>
+    <div><img alt="" src="../_mobileFirst/img/Nos.svg"></div>
+    <div><img alt="" src="../_mobileFirst/img/meo.svg"></div>
+    <div><img alt="" src="../_mobileFirst/img/nowo.svg"></div>
+    <div><img alt="" src="../_mobileFirst/img/mileniumn.svg"></div>
+    <div><img alt="" src="../_mobileFirst/img/montepio.svg"></div>
+    <div><img alt="" src="../_mobileFirst/img/galp.svg"></div>
+    <div><img alt="" src="../_mobileFirst/img/santander.svg"></div>
+    <div><img alt="" src="../_mobileFirst/img/cgd.svg"></div>
+  </div>
+  <div id="cartao-de-credito-promo">
+    <div class="column promo-highlights">
+      <h2>Obtenha o melhor cartão que se adeque ao seu estilo de vida</h2>
+      <div class="group-dropdown-button ">
+        <div class="dropdown">
+          <label for="touch"><span>procuro um cartão com...</span></label> <input id="touch" type="checkbox">
+          <ul class="slide">
+            <li>
+              <a href="#">Todos os cartões</a>
+            </li>
+            <li>
+              <a href="#">Descontos em compras e refeições</a>
+            </li>
+            <li>
+              <a href="#">Pontos de recompensa</a>
+            </li>
+            <li>
+              <a href="#">Milhas aéreas</a>
+            </li>
+            <li>
+              <a href="#">Benefícios premium e de assinatura</a>
+            </li>
+            <li>
+              <a href="#">Cashback na minha conta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="button-orange hvr-pulse-grow">
+        <a href="#">comparar</a>
+      </div>
+      <div class="horizontal-separator desktop-screen-rule"></div>
+      <div class="container credit-card-ilustrated"><img alt="" src="../_mobileFirst/img/creditCardIllustration.svg"></div>
+      <div class="tagline-icon">
+
+        <img alt="" src="../_mobileFirst/img/cartaoCreditoIcon.svg">
+        <h4>Compare centenas de produtos de forma rápida e fácil</h4>
+      </div>
+
+      <div class="saiba-como">
+        <a href="#">saiba como funciona</a>
       </div>
     </div>
-  </footer>
-  <footer class="row secondaryfooter">
-    <p>&copy; Copyright 2018 para comparamais.com</p>
-  </footer>
+
+  </div>
+
+  <div id="personal-loan-promo">
+    <h2 class="loan-title">Simule as melhores ofertas de crédito pessoal</h2>
+    <div class="container personal-loan-ilustrated ">
+
+      <img src="../_mobileFirst/img/personalLoanIllustration.svg">
+
+    </div>
+    <div class="button-orange-mobile ">
+      <a href="#">comparar</a>
+    </div>
+    
+    <div class="button-orange hvr-pulse-grow">
+        <a href="#">comparar</a>
+      </div>
+      <div class="horizontal-separator desktop-screen-rule container"></div>
+    <div class="tagline-icon-loan">
+
+      <img alt="" src="../_mobileFirst/img/creditoPessoalIcon.svg">
+      <h4>Obtenha o seu empréstimo pessoal com as taxas de juro mais baixas</h4>
+    </div>
+
+    <div class="saiba-como-loan">
+      <a href="#">saiba como funciona</a>
+    </div>
+  </div>
+  
+  
+  
+  <div id="tv-net-voz-promo">
+      <div class="column tv-net-voz-promo-highlights">
+        <h2>Compare pacotes de TV, NET & VOZ dos principais fornecedores</h2>
+       
+       
+        
+        <div class="container tv-ilustrated">
+          <img alt="" src="../_mobileFirst/img/broadBandIllustration.svg"></div>
+          
+          <div class="button-orange-tv-mobile">
+              <a href="#">comparar</a>
+            </div>
+          <div class="button-orange-tv hvr-pulse-grow">
+              <a href="#">comparar</a>
+            </div>
+       
+          <div class="horizontal-separator desktop-screen-rule"></div>
+          <div class="tagline-icon-tv">
+  
+          <img alt="" src="../_mobileFirst/img/bandaLargaIcon.svg">
+          <h4>O serviço de TV, NET & VOZ mais barato da sua zona</h4>
+        </div>
+  
+        <div class="saiba-como-tv">
+          <a href="#">saiba como funciona</a>
+        </div>
+      </div>
+  
+    </div>
+  
+  
+    <div id="energy-promo">
+        <div class="column energy-promo-highlights">
+          <h2>Poupe na sua fatura da eletricidade & gás com o nosso comparador</h2>
+         
+         
+          
+          <div class="container energy-ilustrated">
+            <img alt="" src="../_mobileFirst/img/illustraçaoEnergia.svg"></div>
+            
+            <div class="button-orange-energy-mobile">
+                <a href="#">comparar</a>
+              </div>
+            <div class="button-orange-energy hvr-pulse-grow">
+                <a href="#">comparar</a>
+              </div>
+         
+            <div class="horizontal-separator desktop-screen-rule"></div>
+            <div class="tagline-icon-energy">
+    
+            <img alt="" src="../_mobileFirst/img/energiaIcon.svg">
+            <h4>Escolha entre os melhores fornecedores de energia</h4>
+          </div>
+    
+          <div class="saiba-como-energy">
+            <a href="#">saiba como funciona</a>
+          </div>
+        </div>
+    
+      </div>
+    
+      <!-- Newsletter -->
+      <div class="newsletter">
+          <div class="container">
+              <h2>Receba as nossas dicas de poupança & promoções</h2>
+              <p>Quer estar atualizado com as últimas novidades e promoções do mundo financeiro? Subscreva a nossa newsletter!</p>
+              <form>
+                  <input role="input" placeholder="O seu endereço"/>
+                  
+                  <button type="submit">Subscrever!</button>  
+                </form>
+          </div>
+        
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer id="main-footer">
+          <div class="container">
+            
+            <div class="brand-footer">
+              <img src="../_mobileFirst/img/footerbrand.svg" alt="">
+            </div>
+            <div class="menu-compare">
+              <h3>compare</h3>
+              <ul>
+                <li><a href="#">cartão de crédito</a></li>
+                <li><a href="#">crédito pessoal</a></li>
+                <li><a href="#">TV, NET & VOZ</a></li>
+                <li><a href="#">energia</a></li>
+              </ul>
+            </div>
+            <div class="menu-legal">
+              <h3>legal</h3>
+              <ul>
+                <li><a href="#">termos de serviço</a></li>
+                <li><a href="#">política de privacidade</a></li>
+              </ul>
+            </div>
+            <div class="menu-footer-mobile">
+              <div class="sobre">
+                <a href="#">sobre</a>
+              </div>
+              <div class="vertical-rule"></div>
+              <div class="carreiras">
+                <a href="#">carreiras</a>
+              </div>
+              <div class="vertical-rule"></div>
+              <div class="contacto">
+                <a href="#">contacto</a>
+              </div>
+            
+            </div>
+            <div class="made-in-pt">
+                <img src="../_mobileFirst/img/portugalflag.svg" alt="">
+                <p>fabricado em portugal</p>
+              </div>
+              <div class="footer-rule">
+                
+              </div>
+              
+              <div class="social-media">
+                <p>siga-nos em</p>
+                <div class="social-media-icons">
+                  <img src="../_mobileFirst/img/facebook.svg" alt="">
+                  <img src="../_mobileFirst/img/instagram.svg" alt="">
+                  <img src="../_mobileFirst/img/linkedIn.svg" alt="">
+                </div>
+                <div class="menu-footer-desktop">
+                  <ul>
+                    <li><a href="#">sobre</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">carreiras</a></li>
+                    <li><a href="#">contacto</a></li>
+                    <li><a href="#">blog</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </footer>
+        
+        <div id="footer-copyright">
+            <p>&copy; Copyright 2018 para comparamais.com</p>
+        </div>
+    
 </body>
+
 </html>
