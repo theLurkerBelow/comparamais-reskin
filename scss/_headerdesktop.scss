@@ -1,0 +1,87 @@
+
+    .right-accent img {
+        height: 399px;
+        position: absolute;
+        z-index: -2;
+        margin-top: 1100px;
+    }
+
+
+    .brand img {
+        width: 289px;
+
+    }
+
+
+
+    #burger {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-list {
+        display: flex;
+
+    }
+
+    .nav-list ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 650px;
+        padding-left: 0px;
+
+
+    }
+
+    .nav-list ul a {
+
+        color: #21405F;
+        display: flex;
+        font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+
+
+
+
+    }
+
+    .link.anim-classic {
+        border-bottom: 3px solid transparent;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+
+    .link.anim-classic:hover {
+        border-bottom: 3px solid #F37222;
+    }
+
+    .left-accent img {
+        height: 400px;
+        position: absolute;
+        z-index: -2;
+        margin-top: 384px;
+    }
+
+
+
+
+    .hero-title h1 {
+        font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        text-align: center;
+        color: #21405F;
+        text-transform: capitalize;
+        margin-top: 100px;
+        font-size: 3rem;
+    }

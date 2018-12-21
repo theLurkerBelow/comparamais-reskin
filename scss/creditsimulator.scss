@@ -1,0 +1,1366 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*Grid starts here*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .column {
+        flex: 1;
+    }
+}
+
+/*Grid ends here*/
+
+
+
+
+
+
+/* Mobile first styles go here */
+
+.brand img {
+    width: 135px;
+    margin-left: 30px;
+    margin-top: 39px;
+}
+
+
+#brand-mobile {
+    width: 135px;
+    margin-left: 30px;
+    margin-top: 39px;
+}
+
+.mobile-menu {
+    background-color: #F37222;
+    height: 100vh;
+    width: 70vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 320px;
+    transform: translateX(-50rem);
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.5s;
+}
+
+.mobile-menu ul {
+    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    text-align: left;
+    text-transform: capitalize;
+    height: 480px;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+#menyAvPaa {
+    display: none;
+}
+
+#menyAvPaa:checked~.mobile-menu {
+    transform: translateX(0rem);
+}
+
+#burger {
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 1.5rem;
+    right: 15px;
+    top: 44px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 999;
+}
+
+#burger>i {
+    height: 4px;
+    color: #F37222;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.fas {
+    font-size: 1.6rem;
+}
+
+
+
+.nav-list {
+    display: none;
+}
+
+.left-accent img {
+    height: 190px;
+    position: absolute;
+    z-index: -2;
+    margin-top: 163px;
+}
+
+.right-accent img {
+    height: 190px;
+    position: absolute;
+    z-index: -2;
+    margin-top: 485px;
+}
+
+.left-accent-two {
+    display: none;
+}
+
+.right-accent-two {
+    display: none;
+}
+
+.right-accent {
+    display: flex;
+    justify-content: end;
+}
+
+.bancos-highlights h2 {
+    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 1.2rem;
+    margin-top: 73px;
+    color: #21405F;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+span {
+
+    background: #FFFFFF;
+    color: 4C4D5C;
+    font-size: 1em;
+    font-variant: small-caps;
+    cursor: pointer;
+    display: flex;
+
+    justify-content: center;
+    box-shadow: 2px 0px 11px rgba(0, 0, 0, 0.12);
+    border-radius: 0.313em;
+    padding-top: 15px;
+    padding-right: 28px;
+    padding-left: 28px;
+    padding-bottom: 10px;
+    width: 70%;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+.slide {
+
+
+    height: 0px;
+    text-align: center;
+    transition: height .4s ease;
+    padding-left: 0px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 0px 11px rgba(0, 0, 0, 0.12);
+    max-height: 200px;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 888;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+
+
+}
+
+.slide li {
+    padding: 10px;
+
+    list-style: none;
+
+}
+
+
+#touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch:checked+.slide {
+    height: 300px;
+}
+
+
+
+
+.dropdown li a {
+    text-decoration: none;
+    color: #2d2f31;
+}
+
+.group-dropdown-button {
+
+
+    width: 100%;
+
+    height: 74px;
+
+
+}
+
+.dropdown {
+
+    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-top: 60px;
+    position: relative;
+    z-index: 30;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+#main-footer {
+    background-color: #4C4D5C;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.brand-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 34px;
+}
+
+.brand-footer img {
+    height: 40px;
+}
+
+.vertical-rule {
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+
+
+    height: 20px;
+    width: 2px;
+}
+
+.menu-footer-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 38px;
+    width: 300px;
+}
+
+.menu-footer-mobile a {
+    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.made-in-pt img {
+    width: 26px;
+}
+
+.made-in-pt p {
+    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.made-in-pt {
+    display: flex;
+    width: 217px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 20px;
+}
+
+.footer-rule {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: -12px;
+    min-height: 0;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.social-media p {
+    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 124px;
+}
+
+
+#footer-copyright {
+    height: 80px;
+    background-color: #5F6071;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#footer-copyright p {
+    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: .7rem;
+
+}
+
+
+
+
+.menu-footer-desktop {
+    display: none;
+}
+
+.menu-compare {
+    display: none;
+}
+
+.menu-legal {
+    display: none;
+}
+
+
+
+
+
+span {
+
+    background: #FFFFFF;
+    color: 4C4D5C;
+    font-size: 1em;
+    font-variant: small-caps;
+    cursor: pointer;
+    display: flex;
+
+    justify-content: center;
+    box-shadow: 2px 0px 11px rgba(0, 0, 0, 0.12);
+    border-radius: 0.313em;
+    padding-top: 15px;
+    padding-right: 28px;
+    padding-left: 28px;
+    padding-bottom: 10px;
+    width: 70%;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+.banco-slide {
+
+
+    height: 0px;
+    text-align: center;
+    transition: height .4s ease;
+    padding-left: 0px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 0px 11px rgba(0, 0, 0, 0.12);
+    max-height: 200px;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 999;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+
+
+}
+
+.banco-slide li {
+    padding: 10px;
+
+    list-style: none;
+
+}
+
+
+#banco-touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#banco-touch:checked+.banco-slide {
+    height: 300px;
+}
+
+
+
+
+.banco-dropdown li a {
+    text-decoration: none;
+    color: #2d2f31;
+}
+
+.banco-group-dropdown-button {
+
+
+    width: 100%;
+
+    height: 74px;
+
+
+}
+
+.banco-dropdown {
+
+    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-top: 60px;
+
+    z-index: 30;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+span {
+
+    background: #FFFFFF;
+    color: 4C4D5C;
+    font-size: 1em;
+    font-variant: small-caps;
+    cursor: pointer;
+    display: flex;
+
+    justify-content: center;
+    box-shadow: 2px 0px 11px rgba(0, 0, 0, 0.12);
+    border-radius: 0.313em;
+    padding-top: 15px;
+    padding-right: 28px;
+    padding-left: 28px;
+    padding-bottom: 10px;
+    width: 70%;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+.beneficios-slide {
+
+
+    height: 0px;
+    text-align: center;
+    transition: height .4s ease;
+    padding-left: 0px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 0px 11px rgba(0, 0, 0, 0.12);
+    max-height: 200px;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 888;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+
+
+}
+
+.beneficios-slide li {
+    padding: 10px;
+
+    list-style: none;
+
+}
+
+
+#beneficios-touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#beneficios-touch:checked+.beneficios-slide {
+    height: 300px;
+}
+
+
+
+
+.beneficios-dropdown li a {
+    text-decoration: none;
+    color: #2d2f31;
+}
+
+.beneficios-group-dropdown-button {
+
+
+    width: 100%;
+
+    height: 74px;
+
+
+}
+
+.beneficios-dropdown {
+
+    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-top: 0px;
+
+    z-index: 30;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.breadcrumbs {
+    display: none;
+}
+
+.beneficios-highlights {
+    margin-top: -40px;
+}
+
+.hero-title {
+    display: none;
+}
+
+.filters-desktop {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-filter {
+    display: none;
+}
+
+
+
+
+.credit-cards {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 2px 0px 11px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+
+/****** Style Star Rating Widget *****/
+
+
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating>label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating>input:checked~label,
+/* show gold star when clicked */
+.rating:not(:checked)>label:hover,
+/* hover current star */
+.rating:not(:checked)>label:hover~label {
+    color: #FFD700;
+}
+
+/* hover previous stars in list */
+
+.rating>input:checked+label:hover,
+/* hover current star when changing rating */
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+/* lighten current selection */
+.rating>input:checked~label:hover~label {
+    color: #FFED85;
+}
+
+.toggler-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 42%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toggler-info a {
+    font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: #21405F;
+    text-decoration: none;
+    margin-top: 34px;
+    margin-bottom: 46px;
+}
+
+.toggler-info img {
+    width: 14px;
+    height: 7px;
+    margin-top: -12px;
+}
+
+.credit-cards h2 {
+    font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #21405F;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+
+.taxas {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.taxas h4 {
+    text-align: center;
+    font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 1.2rem;
+
+    color: #21405F;
+
+}
+
+.taxas p {
+    font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: .9rem;
+    color: #BDBDBD;
+    text-transform: capitalize;
+
+}
+
+
+.score-text {
+
+    text-align: center;
+    font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #C4C4C4;
+}
+
+.rating {
+    border: none;
+    width: 100%;
+    padding-right: 82px;
+
+    margin-top: 20px;
+}
+
+.specific-promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.specific-promo img {
+    width: 17px;
+    height: 17px;
+    margin-left: 23px;
+}
+
+.specific-promo p {
+    font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: .8rem;
+    margin-left: 8px;
+    color: #21405F;
+    width: 79%;
+}
+
+
+.button-orange {
+    display: flex;
+    background-color: #F37222;
+    justify-content: center;
+    height: 2.5rem;
+    align-items: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.button-orange a {
+    text-decoration: none;
+    text-transform: capitalize;
+
+    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+    color: #FFFFFF;
+    line-height: 1.8;
+}
+
+
+hr.style7 {
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #fff;
+    margin-top: 38px;
+}
+
+
+.image-thumbnail {
+    width: 92px;
+    height: 58px;
+    margin-left: 104px;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    /* Desktop styles go here */
+
+
+
+
+    .right-accent img {
+        height: 399px;
+        position: absolute;
+        z-index: -2;
+        margin-top: 1100px;
+    }
+
+
+    .brand img {
+        width: 289px;
+
+    }
+
+
+
+    #burger {
+        display: none;
+    }
+
+
+
+
+
+
+    .left-accent img {
+        height: 400px;
+        position: absolute;
+        z-index: -2;
+        margin-top: 384px;
+    }
+
+
+    .mobile-menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-list {
+        display: flex;
+
+    }
+
+    .nav-list ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 650px;
+        padding-left: 0px;
+
+
+    }
+
+    .nav-list ul a {
+
+        color: #21405F;
+        display: flex;
+        font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: capitalize;
+
+
+
+    }
+
+    .link.anim-classic {
+        border-bottom: 3px solid transparent;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+
+    .link.anim-classic:hover {
+        border-bottom: 3px solid #F37222;
+    }
+
+    .banco-dropdown {
+        display: none;
+    }
+
+    .beneficios-dropdown {
+        display: none;
+    }
+
+    .breadcrumbs {
+        margin-top: 60px;
+    }
+
+    .breadcrumbs ul {
+        display: flex;
+
+        justify-content: space-between;
+        width: 240px;
+        align-items: center;
+        list-style: none;
+    }
+
+    .breadcrumbs ul li img {
+        width: 24px;
+
+
+    }
+
+    .breadcrumbs ul li .breadcrumb-caret {
+        width: 15px;
+        height: 15px;
+
+    }
+
+    .breadcrumbs ul li p {
+        font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        color: #8E8E8E;
+        text-transform: capitalize;
+
+    }
+
+    .hero-title h2 {
+        font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 2rem;
+        margin-top: 120px;
+        color: #21405F;
+        text-align: left;
+
+    }
+
+    .hero-title h4 {
+        position: absolute;
+        margin-top: 230px;
+        font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        text-transform: capitalize;
+        font-weight: 100;
+        color: #21405F;
+        font-size: 1.2rem;
+    }
+
+    .hero-title {
+        display: flex;
+        margin-top: 100px;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .breadcrumbs {
+        display: flex;
+    }
+
+
+
+
+    .main-filter {
+
+        // width: 278px;
+        height: 1094px;
+        left: 140px;
+        top: 783px;
+        background: #FFFFFF;
+        box-shadow: 2px 0px 11px rgba(0, 0, 0, 0.12);
+        border-radius: 6px;
+
+    }
+
+    .control {
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .control__indicator {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background: #e6e6e6;
+    }
+
+    .control--radio .control__indicator {
+        border-radius: 50%;
+    }
+
+    .control:hover input~.control__indicator,
+    .control input:focus~.control__indicator {
+        background: #ccc;
+    }
+
+    .control input:checked~.control__indicator {
+        background: #2aa1c0;
+    }
+
+    .control:hover input:not([disabled]):checked~.control__indicator,
+    .control input:checked:focus~.control__indicator {
+        background: #0e647d;
+    }
+
+    .control input:disabled~.control__indicator {
+        background: #e6e6e6;
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    .control__indicator:after {
+        content: '';
+        position: absolute;
+        display: none;
+    }
+
+    .control input:checked~.control__indicator:after {
+        display: block;
+    }
+
+    .control--checkbox .control__indicator:after {
+        left: 8px;
+        top: 4px;
+        width: 3px;
+        height: 8px;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+
+    .control--checkbox input:disabled~.control__indicator:after {
+        border-color: #7b7b7b;
+    }
+
+    .control--radio .control__indicator:after {
+        left: 7px;
+        top: 7px;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background: #fff;
+    }
+
+    .control--radio input:disabled~.control__indicator:after {
+        background: #7b7b7b;
+    }
+
+    .filters-desktop {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+
+    .credit-cards {
+        width: 866px;
+        height: 410px;
+        margin-top: 0px;
+        background: #FFFFFF;
+        box-shadow: 2px 0px 11px rgba(0, 0, 0, 0.12);
+        border-radius: 6px;
+        margin-left: 16px;
+    }
+
+    fieldset,
+    label {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    /****** Style Star Rating Widget *****/
+
+
+
+    .rating>input {
+        display: none;
+    }
+
+    .rating>label:before {
+        margin: 5px;
+        font-size: 1.25em;
+        font-family: FontAwesome;
+        display: inline-block;
+        content: "\f005";
+    }
+
+    .rating>.half:before {
+        content: "\f089";
+        position: absolute;
+    }
+
+    .rating>label {
+        color: #ddd;
+        float: right;
+    }
+
+    /***** CSS Magic to Highlight Stars on Hover *****/
+
+    .rating>input:checked~label,
+    /* show gold star when clicked */
+    .rating:not(:checked)>label:hover,
+    /* hover current star */
+    .rating:not(:checked)>label:hover~label {
+        color: #FFD700;
+    }
+
+    /* hover previous stars in list */
+
+    .rating>input:checked+label:hover,
+    /* hover current star when changing rating */
+    .rating>input:checked~label:hover,
+    .rating>label:hover~input:checked~label,
+    /* lighten current selection */
+    .rating>input:checked~label:hover~label {
+        color: #FFED85;
+    }
+
+    .card-image-rating {
+        display: flex;
+        flex-direction: column;
+        width: 17%;
+
+        margin-top: 86px;
+        margin-left: 40px;
+    }
+
+    .card-image-rating img {
+
+        width: 146px;
+    }
+
+    .card-image-rating h2 {
+
+        position: absolute;
+        z-index: 333;
+
+        width: 40%;
+        margin-top: -50px;
+        font-size: 2.3rem;
+        font-weight: 300;
+    }
+
+    .main-filter {
+        display: flex;
+        width: 25%;
+        flex-direction: column;
+    }
+
+
+    .taxas {
+
+        position: absolute;
+        width: 24%;
+        margin-left: 245px;
+    }
+
+
+
+    .taxas h4 {
+        text-align: center;
+        font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #21405F;
+
+    }
+
+    .taxas p {
+        font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 1.2rem;
+        color: #BDBDBD;
+        text-transform: capitalize;
+
+    }
+
+
+
+
+
+
+
+
+    .image-thumbnail {
+        width: 146px;
+        height: 92px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .rating {
+        border: none;
+        width: 100%;
+        padding-right: 0px;
+
+        margin-top: 20px;
+    }
+
+
+
+    .specific-promo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 63%;
+        margin-left: 270px;
+        margin-top: -65px;
+    }
+
+    .specific-promo img {
+        width: 17px;
+        height: 17px;
+        margin-left: 0px;
+
+    }
+
+    .specific-promo p {
+        font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: .9rem;
+        margin-left: 8px;
+        color: #21405F;
+        width: 90%;
+    }
+
+
+
+
+    hr.style7 {
+        border-top: 1px solid #C4C4C4;
+        border-bottom: 1px solid #fff;
+        position: relative;
+        z-index: 444;
+        background-color: teal;
+        margin-top: -52px;
+    }
+
+
+    .button-orange {
+        display: flex;
+        background-color: #F37222;
+        justify-content: center;
+        height: 2.5rem;
+        align-items: center;
+        width: 26%;
+        margin-left: auto;
+       margin-right: 0px;
+        border-radius: 5px;
+        margin-top: 53px;
+    }
+    
+    .button-orange a {
+        text-decoration: none;
+        text-transform: capitalize;
+    
+        font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: .9rem;
+        color: #FFFFFF;
+        line-height: 1.8;
+    }
+
+
+    .toggler-info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 20%;
+        margin-left: 29px;
+        margin-right: auto;
+       
+        height: 66px;
+    }
+    
+    .toggler-info a {
+        font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 1rem;
+        text-transform: capitalize;
+        text-align: left;
+        color: #21405F;
+        text-decoration: none;
+        margin-top: 34px;
+        margin-bottom: 46px;
+    }
+
+
+
+
+
+
+}

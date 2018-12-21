@@ -1,3 +1,6 @@
+
+
+
 html {
     box-sizing: border-box;
 }
@@ -470,6 +473,14 @@ span {
     font-size: 0.8rem;
 
     line-height: 1.8;
+}
+
+.credit-card-ilustrated {
+    width: 299px;
+    display: flex;
+    margin-right: 340px;
+
+
 }
 
 
@@ -982,6 +993,15 @@ input:focus {
 .menu-legal {
     display: none;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2009,7 +2029,7 @@ input:focus {
     button {
         width: 14%;
         height: 3rem;
-
+        cursor: pointer;
         margin: 4px;
         border-radius: 5px;
         border-color: transparent;
@@ -2302,6 +2322,22 @@ input:focus {
 
 
 
+// ==========================================Cartao credito starts here=============================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==========================================Cartao credito ends here=============================
 
 
 

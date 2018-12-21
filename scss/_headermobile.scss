@@ -1,0 +1,125 @@
+.brand img {
+    width: 135px;
+    margin-left: 30px;
+    margin-top: 39px;
+}
+
+
+#brand-mobile {
+    width: 135px;
+    margin-left: 30px;
+    margin-top: 39px;
+}
+
+.mobile-menu {
+    background-color: #F37222;
+    height: 100vh;
+    width: 70vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 320px;
+    transform: translateX(-50rem);
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.5s;
+}
+
+.mobile-menu ul {
+    font-family: sofia pro soft, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    text-align: left;
+    text-transform: capitalize;
+    height: 480px;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+#menyAvPaa {
+    display: none;
+}
+
+#menyAvPaa:checked~.mobile-menu {
+    transform: translateX(0rem);
+}
+
+#burger {
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 1.5rem;
+    right: 15px;
+    top: 44px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 999;
+}
+
+#burger>i {
+    height: 4px;
+    color: #F37222;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.fas {
+    font-size: 1.6rem;
+}
+
+
+
+.nav-list {
+    display: none;
+}
+
+.left-accent img {
+    height: 190px;
+    position: absolute;
+    z-index: -2;
+    margin-top: 163px;
+}
+
+.right-accent img {
+    height: 190px;
+    position: absolute;
+    z-index: -2;
+    margin-top: 485px;
+}
+
+.left-accent-two {
+    display: none;
+}
+
+.right-accent-two {
+    display: none;
+}
+
+.right-accent {
+    display: flex;
+    justify-content: end;
+}
+
+.hero-title h1 {
+    font-family: sofia pro soft, sofia-pro, -apple-system, Segoe UI, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #21405F;
+    text-transform: capitalize;
+    margin-top: 100px;
+}
