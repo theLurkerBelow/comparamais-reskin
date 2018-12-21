@@ -1304,7 +1304,8 @@ hr.style7 {
         position: relative;
         z-index: 444;
         background-color: teal;
-        margin-top: -52px;
+        
+        margin-bottom: 17px;
     }
 
 
@@ -1314,11 +1315,12 @@ hr.style7 {
         justify-content: center;
         height: 2.5rem;
         align-items: center;
-        width: 26%;
-        margin-left: auto;
-       margin-right: 0px;
+        width: 13%;
+        margin-left: 572px;
+        position: absolute;
+        z-index: 999;
         border-radius: 5px;
-        margin-top: 53px;
+        margin-top: 64px;
     }
     
     .button-orange a {
